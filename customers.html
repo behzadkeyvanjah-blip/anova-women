@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary": "#ffffff", "on-surface-variant": "#444748", "surface-bright": "#fdf9f2", "surface-dim": "#dddad3", "on-primary-container": "#858383", "primary-fixed-dim": "#c8c6c5", "secondary": "#665d55", "surface": "#fdf9f2", "background": "#fdf9f2", "on-background": "#1c1c18", "surface-container-highest": "#e6e2db", "on-secondary-fixed-variant": "#4d453f", "outline": "#747878", "error": "#ba1a1a", "on-error": "#ffffff", "tertiary-fixed-dim": "#cdc5bb", "inverse-primary": "#c8c6c5", "on-secondary-fixed": "#201a15", "on-primary-fixed": "#1c1b1b", "inverse-on-surface": "#f4f0e9", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "secondary-container": "#eaddd4", "primary-container": "#1c1b1b", "error-container": "#ffdad6", "on-surface": "#1c1c18", "on-primary-fixed-variant": "#474646", "surface-variant": "#e6e2db", "on-tertiary-fixed": "#1e1b15", "on-primary": "#ffffff", "inverse-surface": "#31302c", "surface-tint": "#5f5e5e", "surface-container-lowest": "#ffffff", "tertiary-container": "#1e1b15", "primary-fixed": "#e5e2e1", "outline-variant": "#c4c7c7", "surface-container": "#f1ede6", "secondary-fixed": "#ede0d7", "on-secondary-container": "#6a615a", "surface-container-high": "#ece8e1", "on-tertiary-fixed-variant": "#4b463e", "primary": "#000000", "tertiary-fixed": "#e9e1d6", "on-tertiary-container": "#89837a", "surface-container-low": "#f7f3ec", "secondary-fixed-dim": "#d0c4bb", "tertiary": "#000000" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "3rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "margin": "2.5rem", "gutter": "1.5rem" }, "fontFamily": { "headline-lg-mobile": ["Vazirmatn"], "label-md": ["Vazirmatn"], "display-lg-mobile": ["Vazirmatn"], "label-sm": ["Vazirmatn"], "body-lg": ["Vazirmatn"], "headline-sm": ["Vazirmatn"], "body-md": ["Vazirmatn"], "display-lg": ["Vazirmatn"], "headline-md": ["Vazirmatn"], "headline-lg": ["Vazirmatn"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "34px", "letterSpacing": "0", "fontWeight": "500" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "500" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "28px", "letterSpacing": "0", "fontWeight": "300" }], "headline-sm": ["18px", { "lineHeight": "28px", "letterSpacing": "0", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400" }], "display-lg": ["48px", { "lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "300" }], "headline-md": ["22px", { "lineHeight": "32px", "letterSpacing": "0", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen selection:bg-secondary-container selection:text-on-secondary-container"><aside class="fixed right-0 top-0 h-screen w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="p-space-lg flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container flex items-center justify-center shrink-0"><img alt="ANOVA Logo" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrDdGkht5V_1B7ST4DkwwuB4htEj1NSQVUJJq6QeAGLbsgEM_o1Ud97XVF28VQ6laa2os6F0E8tsK2Yv7NYGA5-Tj5O60RAv8I06umlKCigBNeJEsNYqakaoCrSHGNLGZcNJWM9bL1Li0da99gWau2CGFf9dGODqCFD5dnVZvgSfOR0SPtucvofc8oSvuksYnYrlN64wTGIGRuDkuc8YOssba0GRh6SGMBebtE_XeTfP_9Ggs9ERcl6N7sQ"/></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary">ANOVA</span><span class="font-label-sm text-label-sm text-on-surface-variant">پنل مدیریت | وب‌سایت مد زنانه</span></div></div><div class="px-space-lg py-space-xs"><div class="h-px w-full bg-surface-container-high"></div></div><nav class="flex flex-col gap-1 p-space-md" data-active-classes="bg-primary text-on-primary font-label-md rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-lg">dashboard</span><span>داشبورد</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="products" href="#"><span class="material-symbols-outlined text-lg">apparel</span><span>مدیریت محصولات</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="add-product" href="#"><span class="material-symbols-outlined text-lg">add_circle</span><span>افزودن محصول</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="categories" href="#"><span class="material-symbols-outlined text-lg">category</span><span>دسته‌بندی‌ها</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="orders" href="#"><span class="material-symbols-outlined text-lg">shopping_bag</span><span>سفارش‌ها</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="customers" href="#"><span class="material-symbols-outlined text-lg">group</span><span>مشتریان</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="discounts" href="#"><span class="material-symbols-outlined text-lg">sell</span><span>کدهای تخفیف</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="cms-content" href="#"><span class="material-symbols-outlined text-lg">auto_stories</span><span>مدیریت محتوای سایت</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="settings-seo" href="#"><span class="material-symbols-outlined text-lg">tune</span><span>تنظیمات و SEO</span></a></nav></div><div class="p-space-md bg-surface-container-high/60 flex flex-col gap-space-sm"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface hover:text-on-surface transition-colors font-label-md text-label-md" data-path="storefront" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-base">storefront</span><span>مشاهده فروشگاه</span></div><span class="material-symbols-outlined text-xs">arrow_back</span></a><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center"><span class="material-symbols-outlined text-sm text-on-secondary-container">person</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-medium">مدیر فروشگاه ANOVA</span><span class="font-label-sm text-label-sm text-on-surface-variant">سطح دسترسی: مدیر ارشد</span></div></div><a class="p-space-xs rounded text-on-surface-variant hover:text-error hover:bg-error-container transition-colors" data-path="logout" href="#" title="خروج از پنل"><span class="material-symbols-outlined text-lg">logout</span></a></div></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute right-space-sm text-on-surface-variant text-lg pointer-events-none">search</span><input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant pr-9 pl-space-md py-1.5 rounded-lg text-body-md font-body-md focus:outline-none focus:ring-1 focus:ring-primary shadow-none" placeholder="جستجوی سفارش، کالا، مشتری، کد رهگیری..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-low text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm">ربات تلگرام: در انتظار اتصال - فال‌بک اینستاگرام فعال</span></div><div class="hidden md:flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] text-on-surface"><span class="material-symbols-outlined text-base text-on-surface-variant">location_on</span><span class="font-label-sm text-label-sm">شعب فعال: فردوس تهران / گوهردشت کرج</span></div><div class="hidden lg:flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-base">calendar_today</span><span>۲۸ بهمن ۱۴۰۳</span></div><div class="relative flex items-center"><button class="relative p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="اعلانات سفارش‌ها" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button></div><div class="flex items-center gap-space-xs pr-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrDdGkht5V_1B7ST4DkwwuB4htEj1NSQVUJJq6QeAGLbsgEM_o1Ud97XVF28VQ6laa2os6F0E8tsK2Yv7NYGA5-Tj5O60RAv8I06umlKCigBNeJEsNYqakaoCrSHGNLGZcNJWM9bL1Li0da99gWau2CGFf9dGODqCFD5dnVZvgSfOR0SPtucvofc8oSvuksYnYrlN64wTGIGRuDkuc8YOssba0GRh6SGMBebtE_XeTfP_9Ggs9ERcl6N7sQ"/></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Sub-header Breadcrumb & Operational Bar -->
+<div class="px-space-lg py-space-md flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low/70">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer">پنل مدیریت</span>
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+<span class="text-primary font-medium">باشگاه مخاطبان و مدیریت مشتریان</span>
+<span class="mx-space-xs text-outline-variant">/</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">۱۳ از ۱۶</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">file_download</span>
+<span>خروجی اکسل مخاطبان</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-primary text-on-primary hover:bg-secondary transition-all font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-base">person_add</span>
+<span>ثبت مشتری جدید</span>
+</button>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-lg">
+<!-- Top KPI Metric Cards (Monolithic Luxury Style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Metric 1: Total Registered -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex flex-col justify-between shadow-sm relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">کل اعضای باشگاه</span>
+<span class="font-headline-lg text-headline-lg text-primary mt-1 font-semibold">۱,۲۴۰</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">groups</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-0.5 text-primary font-medium">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+            +۸.۴٪ رشد این ماه
+          </span>
+<span class="text-outline">۸۶ کاربر فعال هفته اخیر</span>
+</div>
+<div class="absolute bottom-0 right-0 left-0 h-0.5 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<!-- Metric 2: VIP Customers -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex flex-col justify-between shadow-sm relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">مشتریان وفادار VIP (+۳ خرید)</span>
+<span class="font-headline-lg text-headline-lg text-primary mt-1 font-semibold">۱۸۵</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-0.5 text-primary font-medium">
+            ۱۴.۹٪ از کل اعضا
+          </span>
+<span class="text-outline">سهم ۵۴٪ از گردش مالی</span>
+</div>
+<div class="absolute bottom-0 right-0 left-0 h-0.5 bg-secondary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<!-- Metric 3: Average Order Value -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex flex-col justify-between shadow-sm relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">میانگین ارزش خرید (AOV)</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-primary font-semibold">۳,۸۲۰,۰۰۰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تومان</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">payments</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-0.5 text-primary font-medium">
+<span class="material-symbols-outlined text-sm">north_east</span>
+            +۳۴۰,۰۰۰ نسبت به فصل قبل
+          </span>
+<span class="text-outline">سبد کالکشن زمستانه</span>
+</div>
+<div class="absolute bottom-0 right-0 left-0 h-0.5 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<!-- Metric 4: Retention Rate with Radial SVG -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex flex-col justify-between shadow-sm relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">نرخ بازگشت مشتری (Retention)</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-primary font-semibold">۴۲٪</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">عالی</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg flex items-center justify-center">
+<!-- Inline Mini Radial Progress Meter SVG -->
+<svg class="w-10 h-10 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="42, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-primary font-medium">میانگین مد در ایران: ۲۸٪</span>
+<span class="text-outline">هدف فصلی: ۴۵٪</span>
+</div>
+<div class="absolute bottom-0 right-0 left-0 h-0.5 bg-secondary-container opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+</div>
+<!-- Filter & Segmentation Control Bar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm items-center">
+<!-- Search Input -->
+<div class="md:col-span-4 relative flex items-center">
+<span class="material-symbols-outlined absolute right-space-sm text-on-surface-variant text-base pointer-events-none">search</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant pr-9 pl-space-md py-2 rounded-lg text-body-md font-body-md focus:outline-none focus:bg-surface-container transition-all" id="searchInput" placeholder="جستجوی نام مشتری، شماره موبایل، شهر..." type="text"/>
+</div>
+<!-- Tag Quick Filters -->
+<div class="md:col-span-5 flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0 scrollbar-none">
+<button class="px-space-sm py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md whitespace-nowrap transition-colors" type="button">همه مخاطبان</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-colors flex items-center gap-1" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>مشتریان VIP</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-colors" type="button">شعبه فردوس</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-colors" type="button">آنلاین اینستاگرام</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-colors" type="button">مشتریان جدید</button>
+</div>
+<!-- Sort & Dropdown Selectors -->
+<div class="md:col-span-3 flex items-center justify-end gap-space-xs">
+<div class="flex items-center gap-1 bg-surface-container-low px-space-sm py-1.5 rounded-lg text-on-surface font-label-md text-label-md w-full justify-between">
+<span class="text-on-surface-variant flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">sort</span>
+              مرتب‌سازی:
+            </span>
+<select class="bg-transparent text-on-surface focus:outline-none cursor-pointer font-label-md text-label-md">
+<option value="total_spent">بیشترین مجموع خرید</option>
+<option value="latest_order">آخرین تاریخ سفارش</option>
+<option value="order_count">بیشترین دفعات سفارش</option>
+<option value="name_asc">الفبایی (نام)</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Split Layout: Customer Table (7 cols) + Selected Customer Dossier (5 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left (in RTL, Right Column First): Customers Table List (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="p-space-md flex items-center justify-between border-b border-surface-container-high/40">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">contacts</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-medium">فهرست خریداران و اعضا</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">۵ مشتری در این نما</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">بروزرسانی زنده از درگاه و POS شعبه فردوس</span>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<th class="py-space-sm px-space-md font-medium">نام و مشخصات</th>
+<th class="py-space-sm px-space-md font-medium">تماس و شهر</th>
+<th class="py-space-sm px-space-md font-medium text-center">سفارش‌ها</th>
+<th class="py-space-sm px-space-md font-medium">مجموع خرید</th>
+<th class="py-space-sm px-space-md font-medium">آخرین سفارش</th>
+<th class="py-space-sm px-space-md font-medium text-center">عملیات</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Customer 1 (Active Selected) -->
+<tr class="bg-surface-container-high/40 hover:bg-surface-container transition-colors cursor-pointer group" onclick="selectCustomer('niloofar')">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm text-headline-sm font-medium shrink-0">
+                      ن
+                    </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-body-md text-body-md font-medium text-primary">نیلوفر رضوانی</span>
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;" title="مشتری VIP طلایی">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">عضو VIP Gold (شعبه فردوس)</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md text-on-surface">
+<div class="flex flex-col">
+<span class="dir-ltr text-right font-medium">۰۹۱۲۳۴۵۶۷۸۹</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تهران، منطقه ۲ (سعادت‌آباد)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-md text-label-md font-medium text-primary">۷ بار</span>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md">
+<div class="flex flex-col">
+<span class="font-medium text-primary">۲۴,۶۵۰,۰۰۰</span>
+<span class="font-label-sm text-label-sm text-outline">تومان</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface">
+<div class="flex flex-col">
+<span>۱۴۰۳/۱۱/۲۴</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">۴ روز پیش</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm hover:bg-secondary transition-colors" type="button">
+                    مشاهده پرونده
+                  </button>
+</td>
+</tr>
+<!-- Customer 2 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer group" onclick="selectCustomer('sarah')">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center font-headline-sm text-headline-sm font-medium shrink-0">
+                      س
+                    </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-body-md text-body-md font-medium text-primary">سارا اعتمادی</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">مشتری آنلاین (اینستاگرام)</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md text-on-surface">
+<div class="flex flex-col">
+<span class="dir-ltr text-right font-medium">۰۹۳۵۱۲۳۴۵۶۷</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">اصفهان، چهارباغ بالا</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container font-label-md text-label-md font-medium text-on-surface">۳ بار</span>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md">
+<div class="flex flex-col">
+<span class="font-medium text-primary">۱۱,۲۰۰,۰۰۰</span>
+<span class="font-label-sm text-label-sm text-outline">تومان</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface">
+<div class="flex flex-col">
+<span>۱۴۰۳/۱۱/۱۸</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">۱۰ روز پیش</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors" type="button">
+                    مشاهده پرونده
+                  </button>
+</td>
+</tr>
+<!-- Customer 3 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer group" onclick="selectCustomer('donya')">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-headline-sm text-headline-sm font-medium shrink-0">
+                      د
+                    </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-body-md text-body-md font-medium text-primary">دنیا شفیعی</span>
+<span class="material-symbols-outlined text-outline text-sm" style="font-variation-settings: 'FILL' 1;" title="مشتری VIP نقره‌ای">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">عضو VIP Silver (گوهردشت کرج)</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md text-on-surface">
+<div class="flex flex-col">
+<span class="dir-ltr text-right font-medium">۰۹۱۹۸۷۶۵۴۳۲</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">البرز، کرج (عظیمیه)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container font-label-md text-label-md font-medium text-on-surface">۴ بار</span>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md">
+<div class="flex flex-col">
+<span class="font-medium text-primary">۱۶,۴۰۰,۰۰۰</span>
+<span class="font-label-sm text-label-sm text-outline">تومان</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface">
+<div class="flex flex-col">
+<span>۱۴۰۳/۱۱/۱۰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">۱۸ روز پیش</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors" type="button">
+                    مشاهده پرونده
+                  </button>
+</td>
+</tr>
+<!-- Customer 4 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer group" onclick="selectCustomer('parisa')">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center font-headline-sm text-headline-sm font-medium shrink-0">
+                      پ
+                    </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-body-md text-body-md font-medium text-primary">پریسا کاشانی</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">مشتری جدید وب‌سایت</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md text-on-surface">
+<div class="flex flex-col">
+<span class="dir-ltr text-right font-medium">۰۹۰۲۱۱۱۲۲۳۳</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">شیراز، ارم</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container font-label-md text-label-md font-medium text-on-surface">۱ بار</span>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md">
+<div class="flex flex-col">
+<span class="font-medium text-primary">۴,۲۹۰,۰۰۰</span>
+<span class="font-label-sm text-label-sm text-outline">تومان</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface">
+<div class="flex flex-col">
+<span>۱۴۰۳/۱۱/۰۴</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant ۲۴ روز پیش&lt;/span&gt; &lt;/div&gt; &lt;/td&gt; &lt;td class=" px-space-md="" py-space-md="" text-center"="">
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors" type="button">
+                    مشاهده پرونده
+                  </button>
+</span></div></td>
+</tr>
+<!-- Customer 5 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer group" onclick="selectCustomer('elham')">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center font-headline-sm text-headline-sm font-medium shrink-0">
+                      ا
+                    </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-body-md text-body-md font-medium text-primary">الهام صادقیان</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">مشتری حضوری (فردوس)</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md text-on-surface">
+<div class="flex flex-col">
+<span class="dir-ltr text-right font-medium">۰۹۱۲۹۹۹۸۸۷۷</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تهران، بلوار فردوس شرق</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container font-label-md text-label-md font-medium text-on-surface">۲ بار</span>
+</td>
+<td class="py-space-md px-space-md font-body-md text-body-md">
+<div class="flex flex-col">
+<span class="font-medium text-primary">۵,۸۰۰,۰۰۰</span>
+<span class="font-label-sm text-label-sm text-outline">تومان</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-label-md text-label-md text-on-surface">
+<div class="flex flex-col">
+<span>۱۴۰۳/۱۰/۲۸</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">۱ ماه پیش</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors" type="button">
+                    مشاهده پرونده
+                  </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Bar -->
+<div class="p-space-md bg-surface-container-low/40 flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">نمایش ۱ تا ۵ از ۱,۲۴۰ کاربر ثبت‌نامی</span>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-primary text-on-primary font-medium" type="button">۱</button>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors" type="button">۲</button>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors" type="button">۳</button>
+<span class="px-1 text-outline">...</span>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors" type="button">۲۴۸</button>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right (in RTL, Left Dossier Pane): Customer Detailed Profile (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Dossier Header Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md relative overflow-hidden">
+<!-- Top Tag & Status Badges -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                سطح وفاداری: VIP Gold
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">کد کاربری: ANV-9421</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="ویرایش اطلاعات" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container transition-colors" title="مسدودسازی یا تعلیق" type="button">
+<span class="material-symbols-outlined text-base">block</span>
+</button>
+</div>
+</div>
+<!-- Customer Identity Strip -->
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<img class="w-16 h-16 rounded-full object-cover" data-alt="High fashion portrait of an elegant Persian woman customer with sleek modern minimalist outfit, warm beige neutral background, luxury boutique aesthetic, natural soft light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQJ682T9kSHzdPE3WULA0KcuOw8CaNXdGgE1geAbXlFgQ507qCG8OZ4r8zS5ec0ZR7otvyBwTaD5smBu_khDZMPT9NHf76weT-5kw2W_t_Dxo3-20JZn-2gYzB7q7c-bn8VzNm-KPX7nAm5HsHPGCgpZhHpD75RY6uMoZKkpk230CC8wJRM1-FpMzhhWkLx1BwDxzdtZNxC3yktrqOa4fYuOs4MrOSzgJVVSLL6fU"/>
+<span class="w-3.5 h-3.5 rounded-full bg-secondary absolute bottom-0 left-0 ring-2 ring-surface-container-lowest" title="حساب فعال و تایید هویت شده"></span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-primary font-semibold">نیلوفر رضوانی</h3>
+<span class="font-body-md text-body-md text-on-surface-variant">عضویت از فروردین ۱۴۰۲ (۲۲ ماه همراهی با ANOVA)</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">کانال جذب اولیه: اینستاگرام رسمی و مراجعه حضوری شعبه فردوس</span>
+</div>
+</div>
+<!-- Fast Contact & Action Buttons -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<!-- WhatsApp / Bale Direct Button -->
+<button class="flex items-center justify-center gap-space-xs py-2 px-space-sm rounded-lg bg-surface-container-high text-primary hover:bg-surface-container-highest transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-base">chat</span>
+<span>پیام در بله / واتساپ</span>
+</button>
+<!-- Custom Coupon Generation Button -->
+<button class="flex items-center justify-center gap-space-xs py-2 px-space-sm rounded-lg bg-primary text-on-primary hover:bg-secondary transition-colors font-label-md text-label-md" onclick="openCouponModal()" type="button">
+<span class="material-symbols-outlined text-base">redeem</span>
+<span>صدور کوپن اختصاصی</span>
+</button>
+</div>
+<div class="h-px bg-surface-container w-full my-space-xs"></div>
+<!-- Stylist & Fitting Notes (Exclusive Boutiques Feature) -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-base text-secondary">style</span>
+                یادداشت استایلیست اختصاصی برند
+              </span>
+<span class="font-label-sm text-label-sm text-outline">توسط پرسنل فردوس</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              سایز ترجیحی در بالاتنه ۳۸ و قد استاندارد ۱۶۸ سانتی‌متر. تمایل ویژه به پالت‌های رنگی مونوکروم و خاکی (کرم، کاراملی، طوسی گرم). جنس پارچه مورد علاقه: کتان شسته شده طبیعی و کرپ حریر دوبل. عموماً ترجیح می‌دهد خرید نهایی را در اتاق پرو VIP شعبه فردوس پس از رزرو حضوری انجام دهد.
+            </p>
+<div class="flex flex-wrap gap-1 mt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">سایز: ۳۸</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">قد: ۱۶۸</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">جنس: کتان / کرپ</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">علاقه: پالتوهای ساختاریافته</span>
+</div>
+</div>
+<!-- Registered Delivery Addresses -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-base text-on-surface-variant">pin_drop</span>
+              نشانی‌های ثبت شده مشتری
+            </span>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col gap-1 border border-surface-container-high/60">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-medium text-primary">نشانی پیش‌فرض (منزل)</span>
+<span class="text-secondary font-medium">کدپستی: ۱۹۹۷۸۳۴۵۲۱</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">تهران، سعادت‌آباد، میدان کاج، خیابان مروارید، کوچه پنجم شرقی، پلاک ۱۴، زنگ ۴</p>
+</div>
+</div>
+<!-- Recent Purchase History -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-base text-on-surface-variant">receipt_long</span>
+                تاریخچه خریدهای اخیر
+              </span>
+<span class="font-label-sm text-label-sm text-secondary cursor-pointer hover:underline">مشاهده همه ۷ سفارش</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Order item 1 -->
+<div class="p-space-sm bg-surface-container-low/50 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary font-label-md text-label-md font-medium">#۹۸</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-medium">کت پشمی کتی آنووا + کمربند چرم</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">۲۴ بهمن ۱۴۰۳ • شعبه فردوس (حضوری)</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md font-semibold text-primary">۶,۴۵۰,۰۰۰ ت</span>
+<span class="font-label-sm text-label-sm text-secondary">تحویل گردید</span>
+</div>
+</div>
+<!-- Order item 2 -->
+<div class="p-space-sm bg-surface-container-low/50 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary font-label-md text-label-md font-medium">#۸۲</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-medium">پیراهن ماکسی کرپ ابریشم مگنولیا</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">۲ دی ۱۴۰۳ • سفارش آنلاین وب‌سایت</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md font-semibold text-primary">۴,۲۰۰,۰۰۰ ت</span>
+<span class="font-label-sm text-label-sm text-secondary">تحویل پیک ویژه</span>
+</div>
+</div>
+<!-- Order item 3 -->
+<div class="p-space-sm bg-surface-container-low/50 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary font-label-md text-label-md font-medium">#۶۹</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-medium">ترنچ‌کت کلاسیک دو سینه شتری</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">۱۵ آبان ۱۴۰۳ • شعبه فردوس (حضوری)</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md font-semibold text-primary">۸,۹۰۰,۰۰۰ ت</span>
+<span class="font-label-sm text-label-sm text-secondary">تحویل گردید</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Customer Life-time Value (LTV) Summary Footer -->
+<div class="p-space-sm bg-secondary-fixed/30 rounded-lg flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-secondary-fixed font-medium">مجموع ارزش مالی ثبت شده (LTV)</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">۲۴,۶۵۰,۰۰۰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تومان</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Component: Dedicated Coupon Generator (Interactive Vanilla JS) -->
+<div class="fixed inset-0 z-50 bg-primary/20 backdrop-blur-sm hidden items-center justify-center p-space-md" id="couponModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">redeem</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-medium">صدور کوپن اختصاصی مخاطب</h3>
+</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors" onclick="closeCouponModal()" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<span class="font-body-md text-body-md text-on-surface-variant">
+          کوپن زیر مستقیماً به پیامک و پنل کاربری خانم <strong class="text-primary font-semibold">نیلوفر رضوانی</strong> متصل و ارسال خواهد شد:
+        </span>
+<div class="flex flex-col gap-1 mt-space-xs">
+<label class="font-label-md text-label-md text-primary">کد تخفیف اختصاصی</label>
+<div class="flex items-center gap-space-xs">
+<input class="w-full bg-surface-container text-primary font-mono text-center font-bold py-2 rounded-lg text-body-md focus:outline-none" id="couponCodeInput" readonly="" type="text" value="ANOVA-VIP-NILOUFAR15"/>
+<button class="p-2 bg-surface-container-high hover:bg-surface-container-highest rounded-lg text-primary" onclick="generateNewCouponCode()" title="تولید کد جدید" type="button">
+<span class="material-symbols-outlined text-base">refresh</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-primary">درصد یا مبلغ تخفیف</label>
+<select class="bg-surface-container-low text-on-surface p-2 rounded-lg font-body-md text-body-md focus:outline-none">
+<option value="15">۱۵ درصد (ویژه سالگرد عضویت)</option>
+<option value="20">۲۰ درصد (کالکشن بهاره نو)</option>
+<option value="500000">۵۰۰,۰۰۰ تومان اعتبار خرید</option>
+<option value="1000000">۱,۰۰۰,۰۰۰ تومان هدیه ویژه VIP</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-primary">مدت اعتبار</label>
+<select class="bg-surface-container-low text-on-surface p-2 rounded-lg font-body-md text-body-md focus:outline-none">
+<option value="7">۷ روز کاری</option>
+<option value="14">۱۴ روز کاری</option>
+<option value="30">۳۰ روز (یک ماه کامل)</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-space-xs">
+<input checked="" class="accent-primary rounded" id="smsNotify" type="checkbox"/>
+<label class="font-label-md text-label-md text-on-surface cursor-pointer" for="smsNotify">
+            ارسال خودکار پیامک تبریک و اطلاع‌رسانی به شماره ۰۹۱۲۳۴۵۶۷۸۹
+          </label>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors" onclick="closeCouponModal()" type="button">
+          انصراف
+        </button>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary hover:bg-secondary font-label-md text-label-md transition-colors flex items-center gap-1" onclick="confirmCouponIssue()" type="button">
+<span class="material-symbols-outlined text-base">check</span>
+<span>تایید و ارسال به مشتری</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function openCouponModal() {
+    const modal = document.getElementById('couponModal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+  }
+
+  function closeCouponModal() {
+    const modal = document.getElementById('couponModal');
+    if (modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function generateNewCouponCode() {
+    const rand = Math.floor(1000 + Math.random() * 9000);
+    const input = document.getElementById('couponCodeInput');
+    if (input) {
+      input.value = 'ANOVA-VIP-' + rand;
+    }
+  }
+
+  function confirmCouponIssue() {
+    alert('کوپن اختصاصی با موفقیت صادر و به شماره مشتری پیامک شد.');
+    closeCouponModal();
+  }
+
+  function selectCustomer(id) {
+    // In a dynamic app, this populates the 5-col customer dossier on the left
+    console.log('Customer selected:', id);
+  }
+</script></main></div></body></html>
